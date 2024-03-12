@@ -1,0 +1,40 @@
+Data Types:
+    integer - whole number
+    string -text
+    double - decimal number
+    Char - one character
+    Boolean - true/false.
+Variable Declaration:
+    var a(name of the variable) :(data type i.e "Int, String, Double"- the data types must be sentence case; uppercase should start)
+    var a = 23 ~this is without saying data type yet it will still identify it (hereby as integer)
+        var is a dynamic type of variable declaration compared to val which is static type
+
+    val z: Int
+    y = 24
+    val y: String
+    x = "Yours Truly"
+
+        with val a variable cannot be re-assigned i.e z = 35 will fail.
+        the first is applied throughout; it is static
+
+    Variable values:
+    a = 23 ~if a was an integer
+
+    Variable usage:
+    println(a+another_var)
+
+    var summation = a+b
+    println(summation)
+
+    var age: Int
+    age = 18
+    var height: Int
+    height = 45
+    println("Your age is $age and height is $height") ~ concatenation is by dollar sign before a variable name
+        or
+    println("Your age is " +age+ " and height is " +height) ~ concatenation as well
+    output - Your age is 18 and height is 45
+
+    and here is referred by &&
+        i.e (age>0&&<18)
+            println("You are a child")
