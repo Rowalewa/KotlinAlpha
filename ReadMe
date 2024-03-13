@@ -38,3 +38,70 @@ Variable Declaration:
     and here is referred by &&
         i.e (age>0&&<18)
             println("You are a child")
+
+    variable declaration
+    when (variable name){
+        value1 -> println(output)
+        value2 -> println(output)
+        value3 -> println(output)
+
+        else -> println(output)
+    }
+Files are named using CamelCasing where phrases are written without spacing or punctuation but with capitalized words.
+
+Taking Input from user and displaying output:
+    print("Please enter your name: ") ~prints topic of input
+    var enteredString = readLine() ~enables user type in data
+    println("You have entered the string $enteredString") ~ displays output
+    # by default all inputs are regarded as string #
+
+    Use as integer
+    print("Enter a number")
+    var enteredNo = Integer.valueOf(readLine())
+    println("The number entered is $enteredNo")
+    ~This accepts only integer else error
+
+
+
+
+    Scanner gives classes for conversion from one data type to another
+
+Arrays to order the information you have in an orderly manner
+inside maina
+    arrayOf(data separated by commas: (2, 23.4, "John", 'w'))
+
+    one to host only a certain data type:
+    arrayOf<Int>(12, 24, 36) if any other is entered error
+    General structure -> arrayOf<DataType>(value1, value2...)
+
+    uniquely identified by a variable name
+    var arr = arrayOf<Int>(12, 24, 36)
+
+    modifying data within an array
+    arr[2] = 35
+
+    Or
+
+    modifying array using set function
+    println(arr[2]) -> 36
+    arr.set(2, 35)
+    println(arr[2]) -> 35
+
+Range
+    maina
+        var <variable name> = firstValue..lastValue
+        for(num in <variable name>){
+            println(num)
+        }
+
+        // Using rangeTo
+        var <name> = 1.rangeTo(5)
+        for (num in <name>){
+            println(num)
+        }
+        // steps
+        var <name> = 1.rangeTo(5)
+        var odd = <name>.step(2)
+        for (x in odd){
+            println(x)
+        }

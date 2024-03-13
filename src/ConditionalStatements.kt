@@ -73,4 +73,12 @@ fun main(args: Array<String>) {
     }else{
         println("Invalid height or weight")
     }
+    var rank = 0
+    when (rank){
+        1-> println("Winner")
+        2-> println("First Runners Up")
+        3-> println("Second Runners Up")
+
+        else -> println("$rank is invalid")
+    }
 }
