@@ -105,3 +105,34 @@ Range
         for (x in odd){
             println(x)
         }
+
+Functions:
+    Functions are declared using fun then named starting with lowercase, with a pair of brackets after.
+        fun circleArea (): <datatype>{
+
+        }
+        ->here the data type is for the return.
+    Arguments can be included in the function in brackets whose data types have to be specified.
+        defaulted values:
+            fun circleArea (pi: Double = 3.14, radius: double = 7.0): String{
+                val area = pi*radius*radius
+                val message = "The circle's area is: "
+                return ("$message$area")
+            }
+        So that in main:
+            fun main(){
+                println(circleArea())
+            }
+        custom values to be entered in main function, here you only specify the data types:
+            fun circleArea (pi: Double, radius: double): String{
+                val area = pi*radius*radius
+                val message = "The circle's area is: "
+                return ("$message$area")
+            }
+        So that in main:
+            fun main(){
+                println(circleArea(`pi`3.14,`radius` 7.0))
+            }
+            ``means they will generate themselves from the application software in this case; intellij HENCE DO NOT KEY THEM IN
+
+        The output in terminal will be similar
