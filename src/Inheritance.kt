@@ -15,6 +15,9 @@ fun main(args: Array<String>) {
 
     val bird1 = Bird("white", 4)
     bird1.sound()
+
+    print("Hello World, ")
+    print("I am learning Kotlin")
 }
 open  class Parent{ // open means making a class a super class
     val x = 5
