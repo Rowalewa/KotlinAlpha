@@ -17,6 +17,10 @@ fun main() {
     println(car2.brand)
     println(car2.year)
 
+    val question1 = Question()
+    question1.asked()
+    question1.displayStatus()
+
 
     val bulb1 = Bulb()
     bulb1.tOn()
@@ -30,6 +34,11 @@ fun main() {
     bulb2.tOff()
     bulb2.displayLightStatus("bulb2")
     bulb2.option()
+
+    val status1 = Status()
+    status1.tOn()
+    status1.displayStatus()
+    status1.tOff()
 
     val person1 = Person()
     person1.vote("Ben Carson", 25)
@@ -80,4 +89,37 @@ class Person{
             println("$name, You are Underage")
         }
     }
+}
+class Status{
+    private var isViewed: Boolean = false
+    fun tOn(){
+        isViewed=true
+    }
+    fun tOff(){
+        isViewed=false
+    }
+    fun displayStatus() {
+        if (isViewed) {
+            println("The Status is deleted")
+        } else {
+            println("The Status is available")
+        }
+    }
+}
+class Question(){
+    private var asked: Boolean = false
+    fun asked(){
+        asked=true
+    }
+    fun notasked(){
+        asked=false
+    }
+    fun displayStatus() {
+        if (asked) {
+            println("\uD83D\uDE02\uD83D\uDC80")
+        } else {
+            println(" ")
+        }
+    }
+
 }

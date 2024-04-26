@@ -1,6 +1,17 @@
 import javax.swing.InputMap
 
 fun main(args: Array<String>) {
+    print("Enter ISBN Number")
+    val bookISBNNumber = readlnOrNull()
+    if (bookISBNNumber != null) {
+        if (bookISBNNumber.length != 10 && bookISBNNumber.length != 13){
+            println("Invalid ISBN Number")
+        } else{
+            println("Successful, your ISBN Number is: $bookISBNNumber")
+        }
+    } else {
+        println("Your ISBN Number cannot be empty")
+    }
     var a = 18
     var b = 14
     if (a>b)
