@@ -1,4 +1,6 @@
 fun main() {
+    val product1 = Products()
+    product1.displayProducts()
     val car1 = Car("Ford", "Mustang", 1960)  // object of class Car
     // accessing the properties in class using the dot notation.
 //    car1.model = "Ford"
@@ -122,4 +124,21 @@ class Question(){
         }
     }
 
+}
+class Products(
+//    var name: String,
+//    var price: Int,
+//    var quantity: Int
+){
+    fun displayProducts(){
+        print("Enter Product Name")
+        var productName = readlnOrNull()
+        print("Enter Product Price")
+        var productPrice = readlnOrNull()
+        print("Enter Product Quantity")
+        var productQuantity = readlnOrNull()
+        println(
+            "Here are the details: $productName \n$productPrice \n$productQuantity" // \n-> this make sure the variables to the right are displayed on the next line
+        )
+    }
 }
